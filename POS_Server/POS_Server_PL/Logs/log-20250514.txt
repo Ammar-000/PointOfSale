@@ -1,0 +1,12 @@
+2025-05-14 19:30:55.097 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:32:50.076 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:35:21.592 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:36:09.992 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:36:50.230 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:38:36.160 +03:00 [ERR] An error occurred at 14/05/2025 19:38:36 in PL layer, error custom message is '$GetCurrentUserId failed: ClaimTypes.NameIdentifier not found.'
+2025-05-14 19:39:21.674 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:39:29.076 +03:00 [ERR] An error occurred at 14/05/2025 19:39:29 in PL layer, error custom message is '$GetCurrentUserId failed: ClaimTypes.NameIdentifier not found.'
+2025-05-14 19:40:15.720 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:40:34.089 +03:00 [ERR] An error occurred at 14/05/2025 19:40:34 in PL layer, error custom message is '$GetCurrentUserId failed: ClaimTypes.NameIdentifier not found.'
+2025-05-14 19:43:48.856 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-14 19:47:36.253 +03:00 [WRN] Failed to determine the https port for redirect.

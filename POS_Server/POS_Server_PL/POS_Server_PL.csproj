@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9f56a8e3-ee07-42e5-abf1-7a5175590748</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="7.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="7.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POS_Server_BLL\POS_Server_BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Helper">
+      <HintPath>..\..\Helper\Helper\bin\Debug\net7.0\Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="POS_Domains">
+      <HintPath>..\..\POS_Domains\POS_Domains\bin\Debug\net7.0\POS_Domains.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

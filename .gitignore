@@ -1,0 +1,39 @@
+# Build folders
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET specific
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Publish output
+publish/
+
+# Visual Studio cache files
+.vs/
+*.sln.docstates
+
+# Others
+_ReSharper*/
+*.db
+*.DotSettings.user
+*.cache

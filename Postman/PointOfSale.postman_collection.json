@@ -1,0 +1,6802 @@
+{
+	"info": {
+		"_postman_id": "9e73e1af-dd89-4abe-bd29-9900a43c6e26",
+		"name": "PointOfSale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24384549"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Users Basics",
+							"item": [
+								{
+									"name": "Count",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"Count"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Count",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Count",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"Count"
+													],
+													"query": [
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Get All",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"GetAll"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Get All",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetAll",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"GetAll"
+													],
+													"query": [
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Filter By",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"FilterBy"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Filter By",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/FilterBy",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"FilterBy"
+													],
+													"query": [
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Get All Paged",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Get All Paged",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetAllPaged?pageNum=1&pageQty=1",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"GetAllPaged"
+													],
+													"query": [
+														{
+															"key": "pageNum",
+															"value": "1"
+														},
+														{
+															"key": "pageQty",
+															"value": "1"
+														},
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Filter By Paged",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Filter By Paged",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/FilterByPaged?pageNum=1&pageQty=1",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"FilterByPaged"
+													],
+													"query": [
+														{
+															"key": "pageNum",
+															"value": "1"
+														},
+														{
+															"key": "pageQty",
+															"value": "1"
+														},
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Check Exist By",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/CheckExistBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"CheckExistBy"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Check Exist By",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userName\": \"Ammar1\",\r\n  \"firstName\": \"Ammar\",\r\n  \"lastName\": \"Tawfiq\",\r\n  \"email\": \"ammar@gmail.com\",\r\n  \"createdAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"createdBy\": \"TempCreatedBy\",\r\n  \"updatedAt\": \"2025-05-05T06:47:55.288Z\",\r\n  \"updatedBy\": \"TempUpdatedBy\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/CheckExistBy",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"CheckExistBy"
+													],
+													"query": [
+														{
+															"key": "includeInActive",
+															"value": "true",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Get By Id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"09f76a70-0b2a-4ca1-b2bb-ba1badbd1ed7\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetById",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"GetById"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Get By Id",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"09f76a70-0b2a-4ca1-b2bb-ba1badbd1ed7\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetById",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"GetById"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Get My Info",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetMyInfo",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"GetMyInfo"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Get My Info",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/GetMyInfo",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"GetMyInfo"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Add",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"user\": {\r\n    \"id\": \"\",\r\n    \"userName\": \"Ammar_1\",\r\n    \"firstName\": \"Ammar\",\r\n    \"lastName\": \"Tawfiq\",\r\n    \"email\": \"ammar1@gmail.com\",\r\n    \"phoneNumber\": \"7335629291\"\r\n  },\r\n  \"password\": \"0000001\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"Add"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Add",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"user\": {\r\n    \"id\": \"\",\r\n    \"userName\": \"Ammar_1\",\r\n    \"firstName\": \"Ammar\",\r\n    \"lastName\": \"Tawfiq\",\r\n    \"email\": \"ammar1@gmail.com\",\r\n    \"phoneNumber\": \"7335629291\"\r\n  },\r\n  \"password\": \"0000001\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Add",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"Add"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Update",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"id\": \"86344166-65eb-4930-8552-a7475c2d8bbe\",\r\n        \"userName\": \"Ammar_3\",\r\n        \"firstName\": \"Ammar_3\",\r\n        \"lastName\": \"Tawfiq_3\",\r\n        \"email\": \"ammar_3@gmail.com\",\r\n        \"phoneNumber\": \"7335629293\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"Update"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Update",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n        \"id\": \"86344166-65eb-4930-8552-a7475c2d8bbe\",\r\n        \"userName\": \"Ammar_3\",\r\n        \"firstName\": \"Ammar_3\",\r\n        \"lastName\": \"Tawfiq_3\",\r\n        \"email\": \"ammar_3@gmail.com\",\r\n        \"phoneNumber\": \"7335629293\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Update",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"Update"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Soft-Delete",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/SoftDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"SoftDelete"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Soft-Delete",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/SoftDelete",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"SoftDelete"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Restore",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Restore",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersBasics",
+												"Restore"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Restore",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersBasics/Restore",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersBasics",
+														"Restore"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Users Logins",
+							"item": [
+								{
+									"name": "Check User Name Login",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userNameOrEmail\": \"Ammar_3\",\r\n  \"password\": \"0000003\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/CheckUserNameLogin",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersLogins",
+												"CheckUserNameLogin"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Check User Name Login",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userNameOrEmail\": \"Ammar_3\",\r\n  \"password\": \"0000003\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/CheckUserNameLogin",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersLogins",
+														"CheckUserNameLogin"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Check Email Login",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userNameOrEmail\": \"ammar_3@gmail.com\",\r\n  \"password\": \"0000003\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/CheckEmailLogin",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersLogins",
+												"CheckEmailLogin"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Check Email Login",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userNameOrEmail\": \"ammar_3@gmail.com\",\r\n  \"password\": \"0000003\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/CheckEmailLogin",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersLogins",
+														"CheckEmailLogin"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Lock",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/Lock",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersLogins",
+												"Lock"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Lock",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/Lock",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersLogins",
+														"Lock"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Unlock",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/UnLock",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersLogins",
+												"UnLock"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Unlock",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersLogins/UnLock",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersLogins",
+														"UnLock"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Users Passwords",
+							"item": [
+								{
+									"name": "Change Password",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"currentPassword\": \"0000004\",\r\n  \"newPassword\": \"000123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/ChangePassword",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersPasswords",
+												"ChangePassword"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Change Password",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"currentPassword\": \"0000004\",\r\n  \"newPassword\": \"000123\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/ChangePassword",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersPasswords",
+														"ChangePassword"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Generate Password Reset Token",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/GeneratePasswordResetToken",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersPasswords",
+												"GeneratePasswordResetToken"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Generate Password Reset Token",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/GeneratePasswordResetToken",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersPasswords",
+														"GeneratePasswordResetToken"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Reset Password",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{Token_Current}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"resetPasswordToken\": \"CfDJ8Gc9ZJiPfu9KuEjvxtIYN8keYAAyq1GSD1xBerSv5Ts30xySka5RbNMRnkdYImf/pN1DXxpIVP/mhIIDurhI/3lKm3iomvQY8rR1OuOR1/0TfR5PC/y5skssa26T7LaNG8IKSXPgg7JQbV49HyT9qHW6slfJIXkY3tjNWyxiQ8BCr8Oxp1QVi1MEWMUEKhK/2IU4Wfvm9GJ2gmxv4Jx18pritQaIZxC9C181Kbustkpq\",\r\n  \"newPassword\": \"000456\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/ResetPassword",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Users",
+												"UsersPasswords",
+												"ResetPassword"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Reset Password",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"resetPasswordToken\": \"CfDJ8Gc9ZJiPfu9KuEjvxtIYN8keYAAyq1GSD1xBerSv5Ts30xySka5RbNMRnkdYImf/pN1DXxpIVP/mhIIDurhI/3lKm3iomvQY8rR1OuOR1/0TfR5PC/y5skssa26T7LaNG8IKSXPgg7JQbV49HyT9qHW6slfJIXkY3tjNWyxiQ8BCr8Oxp1QVi1MEWMUEKhK/2IU4Wfvm9GJ2gmxv4Jx18pritQaIZxC9C181Kbustkpq\",\r\n  \"newPassword\": \"000456\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{PointOfSaleUrl}}api/Admin/Users/UsersPasswords/ResetPassword",
+													"host": [
+														"{{PointOfSaleUrl}}api"
+													],
+													"path": [
+														"Admin",
+														"Users",
+														"UsersPasswords",
+														"ResetPassword"
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Users Roles",
+					"item": [
+						{
+							"name": "Get User Roles Names",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"6a404f29-9a0d-4104-801a-e88176adea4f\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetUserRolesNames",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"GetUserRolesNames"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get User Roles Names",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"35b188b8-261f-4835-a603-569c42f24164\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetUserRolesNames",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"GetUserRolesNames"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get My Roles Names",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetMyRolesNames",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"GetMyRolesNames"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get My Roles Names",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetMyRolesNames",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"GetMyRolesNames"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Users In Role",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"99b042c1-e933-499b-8725-8cecc6ec83a1\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetUsersInRole",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"GetUsersInRole"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Users In Role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"99b042c1-e933-499b-8725-8cecc6ec83a1\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/GetUsersInRole",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"GetUsersInRole"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Is In Role",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"09f76a70-0b2a-4ca1-b2bb-ba1badbd1ed7\",\r\n  \"roleId\": \"99b042c1-e933-499b-8725-8cecc6ec83a1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/IsInRole",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"IsInRole"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Is In Role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userId\": \"09f76a70-0b2a-4ca1-b2bb-ba1badbd1ed7\",\r\n  \"roleId\": \"99b042c1-e933-499b-8725-8cecc6ec83a1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/IsInRole",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"IsInRole"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add To Role",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"roleId\": \"a8ab808b-f113-4ce4-b73b-cde79c658579\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/AddToRole",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"AddToRole"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add To Role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"roleId\": \"a8ab808b-f113-4ce4-b73b-cde79c658579\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/AddToRole",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"AddToRole"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Remove From Role",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"roleId\": \"a8ab808b-f113-4ce4-b73b-cde79c658579\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/RemoveFromRole",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"UsersRoles",
+										"RemoveFromRole"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Remove From Role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"userId\": \"6a404f29-9a0d-4104-801a-e88176adea4f\",\r\n  \"roleId\": \"a8ab808b-f113-4ce4-b73b-cde79c658579\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/UsersRoles/RemoveFromRole",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"UsersRoles",
+												"RemoveFromRole"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Roles",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"Count"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"Count"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"GetAll"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"GetAll"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"CreatedById\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"UpdatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"FilterBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"CreatedById\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"UpdatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"FilterBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"35b188b8-261f-4835-a603-569c42f24164\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"35b188b8-261f-4835-a603-569c42f24164\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"35b188b8-261f-4835-a603-569c42f24164\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"35b188b8-261f-4835-a603-569c42f24164\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Check Exist By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"35b188b8-261f-4835-a603-569c42f24164\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"35b188b8-261f-4835-a603-569c42f24164\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/CheckExistBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"CheckExistBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Check Exist By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"createdBy\": \"35b188b8-261f-4835-a603-569c42f24164\",\r\n  \"updatedAt\": \"2025-05-06T05:56:07.658Z\",\r\n  \"updatedBy\": \"35b188b8-261f-4835-a603-569c42f24164\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/CheckExistBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"CheckExistBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"a8ab808b-f113-4ce4-b73b-cde79c658579\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetById",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"GetById"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"c62b4720-1153-404e-8c37-bacc24376e41\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/GetById",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"GetById"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"TempRoleId\",\r\n  \"name\": \"Admin\",\r\n  \"description\": \"This is Role 'Admin'.\",\r\n  \"createdBy\": \"TempCreatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Add",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"Add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"id\": \"TempRoleId\",\r\n  \"name\": \"Admin\",\r\n  \"description\": \"This is Role 'Admin'.\",\r\n  \"createdBy\": \"TempCreatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"Add"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"c62b4720-1153-404e-8c37-bacc24376e41\",\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdBy\": \"CreatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Update",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"id\": \"c62b4720-1153-404e-8c37-bacc24376e41\",\r\n  \"name\": \"Role1\",\r\n  \"description\": \"Description for Role1\",\r\n  \"createdBy\": \"CreatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"Update"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Hard-Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"f1df6dd1-40b9-48e9-b028-27ffc4def16f\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Roles/HardDelete",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Roles",
+										"HardDelete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hard-Delete",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"f1df6dd1-40b9-48e9-b028-27ffc4def16f\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Roles/HardDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Roles",
+												"HardDelete"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"Count"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"Count"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"GetAll"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"GetAll"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004,\r\n    \"createdAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"updatedAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"updatedBy\": \"TempUpdatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"FilterBy"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004,\r\n    \"createdAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"updatedAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"updatedBy\": \"TempUpdatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"FilterBy"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										},
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004,\r\n    \"createdAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"updatedAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"updatedBy\": \"TempUpdatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										},
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004,\r\n    \"createdAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"updatedAt\": \"2025-05-09T05:39:53.660Z\",\r\n    \"updatedBy\": \"TempUpdatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetById?id=3",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetById?id=3",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"price\": 1500,\r\n    \"categoryId\": 1,\r\n    \"createdBy\": \"TempCreatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/Add",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"Add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"price\": 1500,\r\n    \"categoryId\": 1,\r\n    \"createdBy\": \"TempCreatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"Add"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"price\": 1500,\r\n    \"categoryId\": 1,\r\n    \"createdBy\": \"TempCreatedById\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/Update",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"price\": 1500,\r\n    \"categoryId\": 1,\r\n    \"createdBy\": \"TempCreatedById\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"Update"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Soft-Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "3",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/SoftDelete",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"SoftDelete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Soft-Delete",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "3",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/SoftDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"SoftDelete"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Restore",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "3",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/Restore",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"Restore"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Restore",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "3",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/Restore",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"Restore"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Image URL",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetImageUrl?id=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"GetImageUrl"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Image URL",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/GetImageUrl?id=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"GetImageUrl"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add Image",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/B:/0/a10.webp"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/AddImage?id=5",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"AddImage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add Image",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/B:/0/a10.webp"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/AddImage?id=5",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"AddImage"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update Image",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/B:/0/a1.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/UpdateImage?id=2",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"UpdateImage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Image",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/B:/0/a1.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/UpdateImage?id=2",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"UpdateImage"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete Image",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Products/DeleteImage?id=4",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Products",
+										"DeleteImage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Image",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Products/DeleteImage?id=4",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Products",
+												"DeleteImage"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "4"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"Count"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"Count"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"GetAll"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"GetAll"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"createdBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\",\r\n  \"updatedAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"updatedBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"FilterBy"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"createdBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\",\r\n  \"updatedAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"updatedBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"FilterBy"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										},
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"createdBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\",\r\n  \"updatedAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"updatedBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										},
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"createdBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\",\r\n  \"updatedAt\": \"2025-05-01T14:21:14.845Z\",\r\n  \"updatedBy\": \"61d1bf8e-9ea8-4be4-93ae-08fa96ce4a3a\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												},
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetById?id=3",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/GetById?id=3",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Cat1\",\r\n    \"description\": \"Description for Cat1\",\r\n    \"createdBy\": \"TempCreatedBy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Add",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"Add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Cat1\",\r\n    \"description\": \"Description for Cat1\",\r\n    \"createdBy\": \"TempCreatedBy\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"Add"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdBy\": \"TempCreatedBy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Update",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\",\r\n  \"createdBy\": \"TempCreatedBy\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"Update"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Soft-Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "5",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/SoftDelete",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"SoftDelete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Soft-Delete",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "5",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/SoftDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"SoftDelete"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Restore",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "5",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Restore",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Categories",
+										"Restore"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Restore",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "5",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Categories/Restore",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Categories",
+												"Restore"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"Count"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"Count"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"GetAll"
+									],
+									"query": [
+										{
+											"key": "includeInActive",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"GetAll"
+											],
+											"query": [
+												{
+													"key": "includeInActive",
+													"value": "true",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"FilterBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"FilterBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetById?id=3",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/GetById?id=3",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"tableNumber\": 15,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 4,\r\n            \"quantity\": 2,\r\n            \"productPrice\": 4500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 5,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 5500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Add",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"Add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"tableNumber\": 15,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 4,\r\n            \"quantity\": 2,\r\n            \"productPrice\": 4500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 5,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 5500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"Add"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 5,\r\n    \"tableNumber\": 11,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 9,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 4500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 4,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"quantity\": 7,\r\n            \"productPrice\": 5500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 5,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Update",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 5,\r\n    \"tableNumber\": 11,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 9,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 4500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 4,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"quantity\": 7,\r\n            \"productPrice\": 5500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 5,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"Update"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Hard-Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "5",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Admin/Orders/HardDelete",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Admin",
+										"Orders",
+										"HardDelete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hard-Delete",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "5",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Admin/Orders/HardDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Admin",
+												"Orders",
+												"HardDelete"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Waiter",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get My Info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Users/GetMyInfo",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Users",
+										"GetMyInfo"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get My Info",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Users/GetMyInfo",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Users",
+												"GetMyInfo"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"currentPassword\": \"0000003\",\r\n  \"newPassword\": \"0000006\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Users/ChangePassword",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Users",
+										"ChangePassword"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Change Password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"currentPassword\": \"0000003\",\r\n  \"newPassword\": \"0000006\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Users/ChangePassword",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Users",
+												"ChangePassword"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Reset Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"resetPasswordToken\": \"CfDJ8Gc9ZJiPfu9KuEjvxtIYN8keYAAyq1GSD1xBerSv5Ts30xySka5RbNMRnkdYImf/pN1DXxpIVP/mhIIDurhI/3lKm3iomvQY8rR1OuOR1/0TfR5PC/y5skssa26T7LaNG8IKSXPgg7JQbV49HyT9qHW6slfJIXkY3tjNWyxiQ8BCr8Oxp1QVi1MEWMUEKhK/2IU4Wfvm9GJ2gmxv4Jx18pritQaIZxC9C181Kbustkpq\",\r\n  \"newPassword\": \"000456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Users/ResetPassword",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Users",
+										"ResetPassword"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Reset Password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"resetPasswordToken\": \"CfDJ8Gc9ZJiPfu9KuEjvxtIYN8keYAAyq1GSD1xBerSv5Ts30xySka5RbNMRnkdYImf/pN1DXxpIVP/mhIIDurhI/3lKm3iomvQY8rR1OuOR1/0TfR5PC/y5skssa26T7LaNG8IKSXPgg7JQbV49HyT9qHW6slfJIXkY3tjNWyxiQ8BCr8Oxp1QVi1MEWMUEKhK/2IU4Wfvm9GJ2gmxv4Jx18pritQaIZxC9C181Kbustkpq\",\r\n  \"newPassword\": \"000456\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Users/ResetPassword",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Users",
+												"ResetPassword"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Users Roles",
+					"item": [
+						{
+							"name": "Get My Roles Names",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/UsersRoles/GetMyRolesNames",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"UsersRoles",
+										"GetMyRolesNames"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get My Roles Names",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/UsersRoles/GetMyRolesNames",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"UsersRoles",
+												"GetMyRolesNames"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"Count"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"Count"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"GetAll"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"GetAll"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"FilterBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"FilterBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Prod1\",\r\n    \"description\": \"Description of Prod1\",\r\n    \"imageSubPath\": \"TempImageSubPath\",\r\n    \"price\": 3500,\r\n    \"categoryId\": 1004\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetById?id=4",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetById?id=4",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "4"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Image URL",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetImageUrl?id=3",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Products",
+										"GetImageUrl"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Image URL",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Products/GetImageUrl?id=3",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Products",
+												"GetImageUrl"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"Count"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"Count"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"GetAll"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"GetAll"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"FilterBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"FilterBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name\": \"Cat1\",\r\n  \"description\": \"Description for Cat1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetById?id=2",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Categories",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Categories/GetById?id=2",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Categories",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Count",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Count",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"Count"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Count",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Count",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"Count"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetAll",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"GetAll"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetAll",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"GetAll"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/FilterBy",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"FilterBy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/FilterBy",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"FilterBy"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get All Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetAllPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"GetAllPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Paged",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetAllPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"GetAllPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Filter By Paged",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/FilterByPaged?pageNum=1&pageQty=1",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"FilterByPaged"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": "1"
+										},
+										{
+											"key": "pageQty",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Filter By Paged",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"tableNumber\": 0,\r\n    \"totalPrice\": 0,\r\n    \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n    \"createdBy\": \"CreatedById\",\r\n    \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n    \"updatedBy\": \"UpdatedById\",\r\n    \"orderItemFilter\": {\r\n        \"id\": 0,\r\n        \"quantity\": 0,\r\n        \"productPrice\": 0,\r\n        \"subTotalPrice\": 0,\r\n        \"productId\": 0,\r\n        \"createdAt\": \"2025-05-09T10:08:10.758Z\",\r\n        \"createdBy\": \"CreatedById\",\r\n        \"updatedAt\": \"2025-05-09T10:08:10.759Z\",\r\n        \"updatedBy\": \"UpdatedById\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/FilterByPaged?pageNum=1&pageQty=1",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"FilterByPaged"
+											],
+											"query": [
+												{
+													"key": "pageNum",
+													"value": "1"
+												},
+												{
+													"key": "pageQty",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetById?id=5",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"GetById"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get By Id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/GetById?id=5",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"tableNumber\": 15,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 4,\r\n            \"quantity\": 2,\r\n            \"productPrice\": 4500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 5,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 5500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Add",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"Add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Add",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"tableNumber\": 15,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 4,\r\n            \"quantity\": 2,\r\n            \"productPrice\": 4500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"productId\": 5,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 5500,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Add",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"Add"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 5,\r\n    \"tableNumber\": 11,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 9,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 4500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 4,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"quantity\": 7,\r\n            \"productPrice\": 5500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 5,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Update",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 5,\r\n    \"tableNumber\": 11,\r\n    \"totalPrice\": 0.01,\r\n    \"createdBy\": \"TempCreatedById\",\r\n    \"orderItems\": [\r\n        {\r\n            \"id\": 9,\r\n            \"quantity\": 5,\r\n            \"productPrice\": 4500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 4,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"quantity\": 7,\r\n            \"productPrice\": 5500.00,\r\n            \"subTotalPrice\": 0.01,\r\n            \"orderId\": 1,\r\n            \"productId\": 5,\r\n            \"createdBy\": \"TempCreatedById\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/Update",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"Update"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Hard-Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token_Current}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "5",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/HardDelete",
+									"host": [
+										"{{PointOfSaleUrl}}api"
+									],
+									"path": [
+										"Waiter",
+										"Orders",
+										"HardDelete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hard-Delete",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "5",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{PointOfSaleUrl}}api/Waiter/Orders/HardDelete",
+											"host": [
+												"{{PointOfSaleUrl}}api"
+											],
+											"path": [
+												"Waiter",
+												"Orders",
+												"HardDelete"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Ammar_1\",\r\n  \"password\": \"0000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PointOfSaleUrl}}api/Login",
+					"host": [
+						"{{PointOfSaleUrl}}api"
+					],
+					"path": [
+						"Login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Ammar_1\",\r\n  \"password\": \"0000001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PointOfSaleUrl}}api/Login",
+							"host": [
+								"{{PointOfSaleUrl}}api"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Token_Current",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmOTk2NTI3Ny0yN2RmLTQ4YzYtOTRkOC04YjgxZWYwNWM4ZWUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjYxZDFiZjhlLTllYTgtNGJlNC05M2FlLTA4ZmE5NmNlNGEzYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJBbW1hcjEiLCJleHAiOjE3NDY0MzcyMTYsImlzcyI6IlBPU19TZXJ2ZXJfQVBJIiwiYXVkIjoiUE9TX1NlcnZlcl9BUElfQ2xpZW50cyJ9.JbLHcNP4RDA5FKAIz43kldM6ysnC-lLVnkEchr7qJYQ",
+			"type": "string"
+		},
+		{
+			"key": "PointOfSaleUrl",
+			"value": "https://posserverapi.azurewebsites.net/",
+			"type": "string"
+		}
+	]
+}
