@@ -25,12 +25,12 @@ public class LoginController : BaseApiController
     readonly JwtSettingsModel _jwtSettings;
 
     public LoginController(IUserService userService, IUsersRolesService usersRolesService,
-        IOptions<JwtSettingsModel> jwtSettings, ICustomLogger logger)
+        IOptions<POSSettingsModel> posSettings, ICustomLogger logger)
         : base(logger)
     {
         _userService = userService;
         _usersRolesService = usersRolesService;
-        _jwtSettings = jwtSettings.Value;
+        _jwtSettings = posSettings.Value.JwtSettings;
     }
 
     [AllowAnonymous]

@@ -16,7 +16,8 @@ public class EFDbContextFactory : IDesignTimeDbContextFactory<EFDbContext>
             .Build();
 
         DbContextOptionsBuilder<EFDbContext> optionsBuilder = new();
-        string connectionString = configuration.GetConnectionString("DefaultConnection");
+        //string connectionString = configuration.GetConnectionString("DefaultConnection");
+        string connectionString = configuration.GetSection("POSSettings").GetSection("ConnectionStrings").GetValue<string>("DefaultConnection");
 
         optionsBuilder.UseSqlServer(connectionString);
 

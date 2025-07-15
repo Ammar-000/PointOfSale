@@ -133,17 +133,25 @@ git clone https://github.com/Ammar-000/PointOfSale.git
 cd PointOfSale
 ```
 
-2. **Set up the database connection string:**
+### 2. Set up the listening prot (optional):
 
-   - Use Secret Manager or set `ConnectionStrings__DefaultConnection` as an environment variable.
+   - Use Secret Manager or set `POSSettings__Port` as an environment variable, or you can leave it as default 8080.
 
-3. **Run database migrations:**
+### 3. Set up the Jwt Key for authentication & authorization:
+
+   - Use Secret Manager or set `POSSettings__JwtSettings__Key` as an environment variable.
+
+### 4. Set up the database connection string:
+
+   - Use Secret Manager or set `POSSettings__ConnectionStrings__DefaultConnection` as an environment variable.
+
+### 5. Run database migrations:
 
 ```bash
 dotnet ef database update --project POS_Server_DAL
 ```
 
-4. **Launch the API:**
+### 6. Launch the API:
 
    - Set `POS_Server_PL` as the startup project.
    - Run the API and test it locally via Swagger or Postman.

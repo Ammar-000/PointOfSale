@@ -28,6 +28,7 @@ namespace POS_Server_PL;
 
 public class Program
 {
+    static POSSettingsModel POSSettings { get; set; } = new();
     static string connectionString = string.Empty;
 
     public static async Task Main(string[] args)
@@ -35,9 +36,10 @@ public class Program
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         ChkExternalConfigAdded(builder, builder.Configuration["SensitiveValuesPlaceholder"]!,
-            "ConnectionStrings:DefaultConnection", "JwtSettings:Key");
-        connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+            "POSSettings:ConnectionStrings:DefaultConnection", "POSSettings:JwtSettings:Key");
 
+        RegisterAndSetPOSSettings(builder);
+        SetConnString();
         RegisterSerilog(builder);
         RegisterDbContext(builder);
         RegisterDALComponents(builder);
@@ -47,6 +49,7 @@ public class Program
         RegisterAspNetCoreIdentity(builder);
         RegisterJWT(builder);
         RegisterSwagger(builder);
+        SetPort(builder);
 
         builder.Services.AddControllers();
         builder.Services.AddAuthorization();
@@ -81,6 +84,20 @@ public class Program
         }
         if (errors.Count > 0) throw new InvalidOperationException("Critical configuration settings are not properly set, " +
             "you must configure them in user secrets or environment variables:\r\n" + string.Join("\r\n", errors));
+    }
+
+    static void RegisterAndSetPOSSettings(WebApplicationBuilder builder)
+    {
+        IConfigurationSection POSSettingsSection = builder.Configuration.GetSection("POSSettings");
+        builder.Services.Configure<POSSettingsModel>(POSSettingsSection);
+
+        //POSSettings = POSSettingsSection.Get<POSSettingsModel>();
+        POSSettingsSection.Bind(POSSettings);
+    }
+
+    static void SetConnString()
+    {
+        connectionString = POSSettings.ConnectionStrings.DefaultConnection;
     }
 
     static void RegisterSerilog(WebApplicationBuilder builder)
@@ -160,9 +177,6 @@ public class Program
 
     static void RegisterJWT(WebApplicationBuilder builder)
     {
-        IConfigurationSection jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
-        builder.Services.Configure<JwtSettingsModel>(jwtSettingsSection);
-        JwtSettingsModel jwtSettings = jwtSettingsSection.Get<JwtSettingsModel>();
         builder.Services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -177,9 +191,9 @@ public class Program
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
 
-                ValidIssuer = jwtSettings.Issuer,
-                ValidAudience = jwtSettings.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Key))
+                ValidIssuer = POSSettings.JwtSettings.Issuer,
+                ValidAudience = POSSettings.JwtSettings.Audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(POSSettings.JwtSettings.Key))
             };
         });
     }
@@ -188,6 +202,11 @@ public class Program
     {
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+    }
+
+    static void SetPort(WebApplicationBuilder builder)
+    {
+        builder.WebHost.UseUrls($"http://0.0.0.0:{POSSettings.Port}");
     }
 
     static async Task ChkSeedData(WebApplication app)
