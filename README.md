@@ -3,6 +3,7 @@
 A modular, extensible, and production-ready **Point of Sale (POS)** Web API built with **ASP.NET Core (C# 11, .NET 7)** using clean architecture principles, 3-tier separation, and Entity Framework Core. The system supports product management, order processing, soft deletes, image handling, JWT authentication, and is fully tested via Postman.
 
 🚀 **Live Demo**: https://posserverapi.azurewebsites.net/
+
 📮 **Postman Collection**:  
 - Online: [Postman Public Workspace](https://www.postman.com/ammar-0/public-workspace-1/collection/y8uul8m/pointofsale)  
 - Offline: Available in the `Postman/PointOfSale.postman_collection.json` file
@@ -40,9 +41,9 @@ This repository includes **3 solutions**:
 
 1. **POS_Server/**  
    Main Web API project containing:
-   - `POS_Server_DAL`: Data Access Layer (repositories, EF configurations)  
-   - `POS_Server_BLL`: Business Logic Layer (services, validation)  
-   - `POS_Server_PL`: Presentation Layer (ASP.NET Core Web API, controllers, DI)
+   - `POS_Server_DAL`: Data Access Layer (repositories, EF configurations, etc.).
+   - `POS_Server_BLL`: Business Logic Layer (services, validation, etc.).
+   - `POS_Server_PL`: Presentation Layer (ASP.NET Core Web API, controllers, DI, etc.).
 
 2. **POS_Domains/**  
    Shared models (`ProductModel`, `OrderModel`, etc.) and DTOs used by frontend/backend.
