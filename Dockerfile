@@ -5,9 +5,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
 
-# These ports are exposed for HTTP (80) and HTTPS (443)
-EXPOSE 80
-EXPOSE 443
+# These port is exposed for HTTP (8080)
+EXPOSE 8080
 
 # -------- Build Image --------
 # This image includes the full .NET SDK for building the app
@@ -44,7 +43,7 @@ FROM base AS final
 WORKDIR /app
 
 # Add this so the app listens on all network interfaces inside Docker
-ENV ASPNETCORE_URLS=http://+:80
+ENV ASPNETCORE_URLS=http://+:8080
 
 # Copy published output from previous stage
 COPY --from=publish /app/publish .
