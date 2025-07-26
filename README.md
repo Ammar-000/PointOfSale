@@ -5,7 +5,7 @@ The API is containerized with **Docker** and deployed on **Google Cloud Run**, w
 
 🚀 **Live API**: [Google Cloud Run](https://point-of-sale-764109633293.us-central1.run.app)
 
-🐳 **Docker Image**: [Docker Hub](https://hub.docker.com/repository/docker/ammarot/point_of_sale/general)
+🐳 **Docker Hub Repository**: [Docker Hub](https://hub.docker.com/repository/docker/ammarot/point_of_sale/general)
 
 📮 **Postman Collection**:  
 - Online: [Postman Public Workspace](https://www.postman.com/ammar-0/public-workspace-1/collection/y8uul8m/pointofsale)  
