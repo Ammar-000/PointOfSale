@@ -3,7 +3,7 @@
 A modular, extensible, and production-ready **Point of Sale (POS)** Web API built with **ASP.NET Core** using clean architecture principles, 3-tier separation, and Entity Framework Core. The API supports product management, order processing, soft deletes, image handling, JWT authentication, and is fully tested via Postman.
 The API is containerized with **Docker** and deployed on **Google Cloud Run**, with the database hosted on **Google Cloud SQL**.
 
-🚀 **Live API**: [Google Cloud Run](https://point-of-sale-764109633293.us-central1.run.app)
+🚀 **Live API**: [Amazon Web Services](http://pointofsalelb-725087056.eu-north-1.elb.amazonaws.com)
 
 🐳 **Docker Hub Repository**: [Docker Hub](https://hub.docker.com/repository/docker/ammarot/point_of_sale/general)
 
